@@ -20,7 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-          'talker = simple_servo_twist_pub.publisher_member_function:main',
+          'sine_motion = simple_servo_twist_pub.publisher_member_function:main',
         ],
     },
 )
