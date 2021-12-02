@@ -23,7 +23,7 @@ class MinimalPublisher(Node):
 
     def __init__(self):
         super().__init__('simple_servo_twist_pub')
-        self.publisher_ = self.create_publisher(TwistStamped, '/servo_service/delta_twist_cmds', 1)
+        self.publisher_ = self.create_publisher(TwistStamped, '/servo_node/delta_twist_cmds', 1)
         self.timer_period = 0.05  # seconds
         self.timer = self.create_timer(self.timer_period, self.timer_callback)
         self.elapsed_time = 0
